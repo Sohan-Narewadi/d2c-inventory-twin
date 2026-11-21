@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>D2C Inventory Twin</title>
+  <meta name="description" content="D2C Inventory Twin: order flow to Cash Conversion Cycle, landed cost sheet per SKU, cash budget and liquidity ratios. FCA IA2 Project 20.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f766e'/%3E%3Cpath d='M7 21h18M9 21V13l7-4 7 4v8' stroke='white' stroke-width='2.4' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="7" fill="currentColor"/><path d="M7 21h18M9 21V13l7-4 7 4v8" stroke="var(--bg)" stroke-width="2.4" fill="none" stroke-linejoin="round"/></svg>
+      </span>
+      <div>
+        <h1>D2C Inventory Twin</h1>
+        <p class="sub" id="companyLine">Stock, Cash and Profit</p>
+      </div>
+    </div>
+    <div class="plan-toggle" role="group" aria-label="Purchase plan shown">
+      <span class="label">Plan shown:</span>
+      <button type="button" data-plan="base" class="active">Base: buy monthly</button>
+      <button type="button" data-plan="bulk">Festive bulk buy</button>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <a href="#dashboard" data-tab="dashboard">Dashboard</a>
+    <a href="#inputs" data-tab="inputs">Inputs</a>
+    <a href="#flow" data-tab="flow"><b>1</b> Order flow &amp; CCC</a>
+    <a href="#cost" data-tab="cost"><b>2</b> Landed cost sheet</a>
+    <a href="#cash" data-tab="cash"><b>3</b> Cash budget &amp; ratios</a>
+    <a href="#twin" data-tab="twin">Festive twin</a>
+    <a href="#checks" data-tab="checks">Textbook checks</a>
+  </nav>
+
+  <div id="errorBanner" class="banner bad" hidden></div>
+  <div id="warnBanner" class="banner warn" hidden></div>
+
+  <main>
+    <section id="tab-dashboard" class="tab"></section>
+    <section id="tab-inputs" class="tab" hidden></section>
+    <section id="tab-flow" class="tab" hidden></section>
+    <section id="tab-cost" class="tab" hidden></section>
+    <section id="tab-cash" class="tab" hidden></section>
+    <section id="tab-twin" class="tab" hidden></section>
+    <section id="tab-checks" class="tab" hidden></section>
+  </main>
+
+  <footer class="foot">
+    FCA IA2 · Project 20 · D2C Inventory Twin · Modules M1 + M2 + M3 + M5 · CO1–CO4 · All amounts in ₹, excluding GST · Sample company is fictional
+  </footer>
+
+  <script src="js/vendor/chart.umd.min.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
