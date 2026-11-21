@@ -839,6 +839,7 @@
           <div class="field"><label>Sanctioned overdraft limit (₹)</label>${nIn('global.odLimit', g.odLimit, '100000')}</div>
           <div class="field"><label>Import supplier: % paid on receipt</label>${nIn('supplierTerms.Import.0', input.supplierTerms.Import[0])}</div>
           <div class="field"><label>Import supplier: % paid after 1 month</label>${nIn('supplierTerms.Import.1', input.supplierTerms.Import[1])}</div>
+          <div class="field"><label>Import supplier: % paid after 2 months</label>${nIn('supplierTerms.Import.2', input.supplierTerms.Import[2])}</div>
         </div>
       </div>
 
@@ -868,7 +869,7 @@
         <div class="grid two">
           <ul>
             <li><b>Staggered deliveries:</b> keep the bulk price but take delivery and pay in three tranches (Aug, Sep, Oct).</li>
-            <li><b>Negotiate supplier credit:</b> 60–90 days on the bulk order moves payment after festive collections. Try 0% on receipt in the controls above.</li>
+            <li><b>Shrink the bulk window and add supplier credit:</b> credit alone only delays the crunch. Buying in Sep for Sep–Nov roughly halves the peak overdraft, and 60-day import terms (0 / 50 / 50) bring it close to the limit. Try both in the controls above (each payment pattern must total 100%).</li>
             <li><b>Arrange finance before ordering:</b> get the overdraft limit raised, or use invoice discounting against B2B debtors.</li>
           </ul>
           <ul>
